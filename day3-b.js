@@ -31,6 +31,5 @@ process.stdin.on('data', function getPowerConsumption(data) {
 		zero=0
 		i++
 	 }
-	 console.log(parseInt(gamma,2)*parseInt(epsilon,2))
-	 
+	 return parseInt(gamma,2) * parseInt(epsilon,2)
     });
