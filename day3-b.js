@@ -4,7 +4,7 @@ process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
 
-process.stdin.on('data', function(data) { 
+process.stdin.on('data', function getPowerConsumption(data) { 
     
     var test = data.split("\n")
 		var zero = 0 ;
