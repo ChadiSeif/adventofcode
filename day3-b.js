@@ -16,8 +16,10 @@ process.stdin.on('data', function getPowerConsumption(data) {
 		for (let j = 0; j < test.length; j++)	{		
 		if (test[j][i] === "0"){
 			zero += 1
-		} else one += 1 
+		} else {
+		  one += 1 
 		}
+              }
 		if ( one > zero ){
 		gamma = gamma + "1" ;
 		epsilon = epsilon +"0"
