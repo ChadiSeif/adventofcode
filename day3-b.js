@@ -12,8 +12,8 @@ process.stdin.on('data', function getPowerConsumption(data) {
 	var gamma= "";
 	var epsilon =""
 		let i = 0
-	 while ( i < test[1].length )  {
-		for(let j=0 ; j<test.length ; j++)	{		
+	 for (let i = 0; i < test[1].length; i++)  {
+		for (let j = 0; j < test.length; j++)	{		
 		if (test[j][i] === "0"){
 			zero += 1
 		} else one += 1 
