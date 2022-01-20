@@ -6,7 +6,7 @@ process.stdin.setEncoding('utf8');
 
 process.stdin.on('data', function getPowerConsumption(data) { 
     
-    var test = data.split("\n")
+    const test = data.split("\n")
 		var zero = 0 ;
 	var one = 0 ;
 	var gamma= "";
