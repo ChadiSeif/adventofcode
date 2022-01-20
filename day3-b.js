@@ -4,30 +4,32 @@ process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
 
-process.stdin.on('data', function(data) { 
+process.stdin.on('data', function getPowerConsumption(data) { 
     
-    var test = data.split("\n")
+    const test = data.split("\n")
 		var zero = 0 ;
 	var one = 0 ;
 	var gamma= "";
 	var epsilon =""
 		let i = 0
-	 while ( i < test[1].length )  {
-		for(let j=0 ; j<test.length ; j++)	{		
+	 for (let i = 0; i < test[1].length; i++)  {
+		for (let j = 0; j < test.length; j++)	{		
 		if (test[j][i] === "0"){
 			zero += 1
-		} else one += 1 
+		} else {
+		  one += 1 
 		}
+              }
 		if ( one > zero ){
 		gamma = gamma + "1" ;
 		epsilon = epsilon +"0"
-			}else {gamma = gamma +"0";
-			epsilon = epsilon +"1"}
-			;
+			} else {
+			  gamma = gamma + "0";
+			  epsilon = epsilon + "1";
+			}
 		one=0 ;
 		zero=0
 		i++
 	 }
-	 console.log(parseInt(gamma,2)*parseInt(epsilon,2))
-	 
+	 return parseInt(gamma,2) * parseInt(epsilon,2)
     });
