@@ -23,9 +23,10 @@ process.stdin.on('data', function getPowerConsumption(data) {
 		if ( one > zero ){
 		gamma = gamma + "1" ;
 		epsilon = epsilon +"0"
-			}else {gamma = gamma +"0";
-			epsilon = epsilon +"1"}
-			;
+			} else {
+			  gamma = gamma + "0";
+			  epsilon = epsilon + "1";
+			}
 		one=0 ;
 		zero=0
 		i++
