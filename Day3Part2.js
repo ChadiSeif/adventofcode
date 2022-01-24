@@ -12,6 +12,7 @@ readline.question(`enter your data `, function LifeSupportRating(data) {
   let arrco2 = [...Data];
 
   let i = 0;
+  
   const getMostCommun = (array, i) => {
     for (let j = 0; j < array.length; j++) {
       if (Data[j][i] === "0") {
@@ -44,9 +45,9 @@ readline.question(`enter your data `, function LifeSupportRating(data) {
 
   let o2 = Rating(arro2, "o2");
   let co2 = Rating(arrco2, "co2");
-  console.log(o2 * co2);
-  return;
+//   console.log(o2 * co2);
+  return (o2*co2) ;
 
-  //**Calculating the power consumption of the submarine
+
   readline.close();
 });
